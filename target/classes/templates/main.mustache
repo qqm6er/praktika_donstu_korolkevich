@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>B-Bank</title>
+</head>
+<body>
+<style>
+   .brd {
+    border: 4px outset red;
+    margin-left:35%;
+    margin-right:35%;
+   }
+</style>
+<center>
+    <div class="brd">
+        <img src="https://lh6.googleusercontent.com/8dmSSAWZa-0EhwUk_GfUmuTNkcdYoLWls46L8lLQDAQ50BRxSESrDu8tJ_iIAbYR5zKCThjwkqVw_qDEM3PB=w1366-h672" width="300" height="90">
+        <form method="post" >
+            <p><input type="text" placeholder="Введите номер своего счета" name="filter1" size="30" required></p>
+            <p><input type="text" placeholder="Введите номер счета получателя" name="filter2" size="30" required></p>
+            <p><input type="text" placeholder="Введите сумму" name="balance" required></p>
+            <p><button type="submit">Совершить перевод</button></p>
+            {{#name}}
+                <div>
+                    <p>{{name}}</p>
+                </div>
+            {{/name}}
+        </form>
+    </div>
+</center>
+
+</body>
+</html>
